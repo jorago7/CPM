@@ -49,8 +49,8 @@ const long timeoutTime = 200; // Reducido para mejorar respuesta del motor
 // Kp: Fuerza de reacción inmediata (más alto = más rápido, pero puede oscilar)
 // Ki: Corrige errores pequeños acumulados (cuidado, puede causar "windup")
 // Kd: Amortigua el movimiento (evita que se pase de largo)
-const float Kp = 350.0;
-const float Ki = 0.6;
+const float Kp = 150.0;
+const float Ki = 0.5;
 const float Kd = 50.0;
 
 float pidIntegral = 0;
@@ -87,7 +87,7 @@ const int ADC_VALUE_AT_130_DEGREES = 460;
 const int ZERO_OFFSET_DEGREES = 0;
 
 // --- Configuración Motor ---
-const float VELOCIDAD_MAXIMA = 7000.0;
+const float VELOCIDAD_MAXIMA = 8000.0; // 2500 velocidad recomendada para terapia. Agregar en el GUI capacidad de ajustar velocidad
 const float VELOCIDAD_HOMING = 5000.0;
 
 // --- LEDs ---
